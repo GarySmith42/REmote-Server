@@ -78,8 +78,7 @@ class Threadsystem(threading.Thread):
 def main(argv):
 	if (len(sys.argv[1:]) == 2):
 		if (str(sys.argv[2]) == "TCP"):
-			#_thread.start_new_thread(cpustream, ("ThreadMemory1",))
-			#_thread.start_new_thread(diskinformations, ("ThreadDisk1",))
+
 			host = ''
 			port = int(sys.argv[1])
 			with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:

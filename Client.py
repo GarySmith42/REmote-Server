@@ -1,3 +1,8 @@
+#---
+
+#---
+
+
 import socket
 import sys
 import time
@@ -56,10 +61,6 @@ def main(argv):
 						continue
 
 
-
-			#except:
-				#("TCP Connection error, please try another server or check your network state.")
-
 		elif(str(sys.argv[3]) == "UDP"):
 			#try:
 			host = str(sys.argv[1])
@@ -70,8 +71,6 @@ def main(argv):
 				print("On port: %s" % port)
 
 			print("In development...")
-			#except:
-				#print("UDP Connection error, please try another server or check your network state.")
 	else:
 		print("Missing arguments in command statement.")
 
